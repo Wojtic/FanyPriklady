@@ -29,12 +29,12 @@ function generate() {
         }
         doc.text(
           `${prvni} + ${druhe < 0 ? `(${druhe})` : druhe} = ${vysledek}`,
-          10 + 50 * Math.floor(i / 14),
+          10 + 65 * Math.floor(i / 14),
           10 + 10 * (i % 14)
         );
         doc.text(
           `${prvni} + ${druhe < 0 ? `(${druhe})` : druhe} =`,
-          10 + 50 * Math.floor(i / 14),
+          10 + 65 * Math.floor(i / 14),
           155 + 10 * (i % 14)
         );
       }
@@ -50,12 +50,12 @@ function generate() {
         }
         doc.text(
           vetsi + " - " + mensi + " = " + (vetsi - mensi),
-          10 + 50 * Math.floor(i / 14),
+          10 + 65 * Math.floor(i / 14),
           10 + 10 * (i % 14)
         );
         doc.text(
           vetsi + " - " + mensi + " = ",
-          10 + 50 * Math.floor(i / 14),
+          10 + 65 * Math.floor(i / 14),
           155 + 10 * (i % 14)
         );
       }
@@ -68,12 +68,12 @@ function generate() {
         vysledek = prvni * druhe;
         doc.text(
           prvni + " × " + druhe + " = " + vysledek,
-          10 + 50 * Math.floor(i / 14),
+          10 + 65 * Math.floor(i / 14),
           10 + 10 * (i % 14)
         );
         doc.text(
           prvni + " × " + druhe + " = ",
-          10 + 50 * Math.floor(i / 14),
+          10 + 65 * Math.floor(i / 14),
           155 + 10 * (i % 14)
         );
       }
@@ -96,16 +96,16 @@ function generate() {
             " = " +
             vysledek +
             (zbytekInput.checked ? " zb. " + zbytek : ""),
-          10 + 50 * Math.floor(i / 14),
+          10 + 65 * Math.floor(i / 14),
           10 + 10 * (i % 14)
         );
         doc.text(
           delenec +
             " ÷ " +
             delitel +
-            " =         " +
+            " =       " +
             (zbytekInput.checked ? " zb. " : ""),
-          10 + 70 * Math.floor(i / 14),
+          10 + 65 * Math.floor(i / 14),
           155 + 10 * (i % 14)
         );
       }
