@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Příklady</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  </head>
+  <body>
+    <label for="pocet">Počet příkladů:</label>
+    <input type="number" name="pocet" id="pocet" value="30" />
+    <br />
+    <select name="operace" id="operace">
+      <option value="scitani">Sčítání</option>
+      <option value="odcitani">Odčítání</option>
+      <option value="nasobeni">Násobení</option>
+      <option value="deleni">Dělení</option>
+    </select>
+    <div class="nastaveni">
+      <label for="maximum">Maximální hodnota:</label>
+      <input type="number" name="maximum" id="maximum" value="100" />
+      <br />
+      <label for="zaporne">Záporná čísla (sčítání a odčítání): </label>
+      <input type="checkbox" name="zaporne" id="zaporne" />
+      <br />
+      <label for="zbytek">Dělení se zbytkem: </label>
+      <input type="checkbox" name="zbytek" id="zbytek" checked />
+    </div>
+    <button onclick="generate()">Generovat!</button>
+    <script src="./main.js"></script>
+  </body>
+  <style>
+    body * {
+      margin: 0.2rem 0;
+    }
+  </style>
+</html>
